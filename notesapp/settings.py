@@ -87,7 +87,8 @@ WSGI_APPLICATION = 'notesapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+#commented because it was not working
+""""DATABASES = {                           
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -96,6 +97,13 @@ DATABASES = {
         'PASSWORD': os.getenv("DB_PASSWORD"),
         'HOST': os.getenv("DB_HOST"),
         'PORT': os.getenv("DB_PORT"),
+    }
+}""""
+# new section
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
