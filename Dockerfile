@@ -1,7 +1,8 @@
 FROM python:3.9
 
 WORKDIR /app/backend
-
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y <packages>
 COPY requirements.txt /app/backend
 RUN apt-get update \
     && apt-get upgrade -y \
