@@ -1,8 +1,9 @@
-data/
-mysql/
-*.log
-.git
-.gitignore
-__pycache__/
-*.pyc
-db.sqlite3
+# data/
+# mysql/
+# *.log
+# .git
+# .gitignore
+# __pycache__/
+# *.pyc
+# db.sqlite3
+
